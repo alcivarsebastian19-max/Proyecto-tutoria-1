@@ -57,7 +57,7 @@ Al ejecutar el programa por primera vez, el sistema verificará el usuario admin
 
 
 SISTEMA INICIALIZADO
->> Presiona Enter para continuar...
+Presiona Enter para continuar...
 
 
 
@@ -257,9 +257,8 @@ Existen dos formas de salir del sistema:
 Al cerrar el programa, el sistema muestra:
 
 
-=============================================
+
    DATOS GUARDADOS.
-=============================================
 Programa finalizado
 Gracias
 
