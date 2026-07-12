@@ -35,24 +35,26 @@ Tecnologías utilizadas
 •	Herramientas o librerías empleadas: stdio.h, stdlib.h, string.h, ctype.h, conio.h (Windows)/termios.h (Linux/Mac) 
 
 Arquitectura y Estructura
-Diagrama de módulos
-main.c
-├── auth.h / auth.c        → Login, registro, roles
-├── estudiantes.h / .c     → CRUD de estudiantes
-├── docentes.h / .c        → CRUD de docentes
-└── tutorias.h / .c        → Gestión de tutorías y reportes
 
-data/
-├── admins.txt             → Superadmin y admins
-├── estudiantes.txt        → Datos de estudiantes + credenciales
-├── docentes.txt           → Datos de docentes + credenciales
-└── tutorias.txt           → Tutorías registradas
+<img width="329" height="176" alt="Pe" src="https://github.com/user-attachments/assets/45992a59-9aa7-4513-a5a8-4d311aebf75c" />
+
 Descripción de archivos
+
 main.c - Punto de entrada del programa. Contiene el bucle principal del sistema, la carga inicial d datos y los menús de cada rol. Controla si el usuario elige salir del programa o regresar al login.
+
+
 auth.c / auth.h – Maneja la autenticación. Contiene la función “login()” que busca credenciales en los tres archivos, “inicializarSistema()” crea el administrador principal, lo hace por defecto si este no existe, “registrarEstudiante()” y “registrarDocente()”accesibles desde el login, “resitrarAdmin()” exclusivo para el administrador principal y “leerContrasenaOculta()” que oculta la contraseña con asteriscos usando “_getch()” en Windows.
+
+
 estudiantes.h / estudiantes.c – Enlaza a los estudiantes en una lista. Implementa carga y guardado en data/estudiantes.txt con separador “|”, busca por cédula o por ID y listado en tabla formateada.
+
+
 docentes.h / docentes.c – Lista enlazada de docentes. Misma estructura que estudiantes. Incluye “listarDocentesSinCodigo()” para mostrar a los estudiantes al solicitar una tutoría.
+
+
 tutorias.h / tutorias.c – Lista enlazada de tutorías. Contiene la lógica de asignación con validación de disponibilidad del docente, cancelación y reprogramación.
+
+
 Estructura de archivos:
 admins.txt:       id|usuario|contrasena|rol
 estudiantes.txt:  id|cedula|nombre|carrera|correo|usuario|contrasena
