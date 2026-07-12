@@ -10,8 +10,10 @@
 
                                  Quito, 12 de julio de 2026
 
-Versión: 1.0
+                                        Versión: 1.0
+
 Introducción
+
 Este manual técnico describe la estructura interna, arquitectura y funcionamiento del Sistema de Gestión de Tutorías Académicas, desarrollado como proyecto final de la asignatura Programación I en la Escuela Politécnica Nacional. Con el objetivo de servir de referencia para desarrolladoras que necesiten comprender, mantener o extender el sistema.
 Descripción del sistema
 Objetivo del software: Automatizar el proceso de registro, asignación y seguimiento de tutorías académicas entre estudiantes y docentes en una institución educativa.
